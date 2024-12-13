@@ -23,6 +23,7 @@ const Home = () => {
                     <div>
                         <h4>{user.name}</h4>
                         <div>
+                            <Link to={`/edit/${user._id}`}>Edit</Link>
                             <button onClick={ ()=> handleDelete(user._id) }>X</button>
                         </div>
                     </div>
